@@ -1781,7 +1781,7 @@ if prefer :tests, 'rspec'
   add_gem 'spring-commands-rspec', :group => :development
   add_gem 'factory_bot_rails', :group => [:development, :test]
   add_gem 'faker', :group => [:development, :test]
-  unless Rails::VERSION::MAJOR == 5 && Rails::VERSION::MINOR >= 1
+  unless Rails::VERSION::MAJOR >= 5 && Rails::VERSION::MINOR >= 1
     add_gem 'capybara', :group => :test
     add_gem 'selenium-webdriver', :group => :test
   end
